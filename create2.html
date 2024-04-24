@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Details</title>
+
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="create2.css">
+    <script src="create2.js" defer></script>
+</head>
+<body>
+    <div class="header-container">
+        <div class="samping">
+            <div class="logo">
+                <img src="/Asset/logo 1cak hitam.png" alt="">
+            </div>
+    
+            <div class="notif-profile">
+                <img class="notif" src="/Asset/homepage/notificationIcon.png" alt="">
+                <a href="profile.html">
+                    <img class="profile" src="/Asset/homepage/profile.png" alt="">
+                </a>
+            </div>
+        </div>
+        
+        <div class="tengah">
+            <div class="search-wrapper">
+                <div class="search">
+                    <form>
+                        <div class="searchh">
+                            <input class="search-input" id="x" type="search" placeholder="Search here...">
+                        </div>
+                    </form>
+                </div>
+                <div class="iconSearch">
+                    <img src="/Asset/homepage/searchIcon.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="navbar">
+        <div class="bagianKiri">
+            <div class="navigation">
+                <a href="homepage.html">
+                    <div class="cat">
+                        <img src="/Asset/homepage/homeIcon.png" alt="">
+                        <p>Home</p>
+                    </div>
+                </a>
+
+                <div class="cat">
+                    <img src="/Asset/homepage/topIcon.png" alt="">
+                    <p>Top</p>
+                </div>
+
+                <div class="cat">
+                    <img src="/Asset/homepage/trendingIcon.png" alt="">
+                    <p>Trending</p>
+                </div>
+
+                <div class="cat">
+                    <img src="/Asset/homepage/freshIcon.png" alt="">
+                    <p>Fresh</p>
+                </div>
+
+                <div class="cat">
+                    <img src="/Asset/homepage/collectionIcon.png" alt="">
+                    <p>Collection</p>
+                </div>
+
+                <div class="cat">
+                    <img src="/Asset/homepage/friendIcon.png" alt="">
+                    <p>Friends</p>
+                </div>
+
+                <a href="create.html">
+                    <div class="cat">
+                        <img src="/Asset/homepage/createIcon.png" alt="">
+                        <p>Create</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-container">
+        <div class="main-padding">
+            <h1>Create Post</h1>
+            <form id="upload-form" class="main-content">
+                <div class="withpic">
+                    <div class="selected-image" id="selected-image">
+                        <!-- <img src="Asset/create/Upload-icon.png" alt=""> -->
+                    </div>
+                    <div class="form">
+                        <div class="ones">
+                            <h2>Title</h2>
+                            <input type="text" class="input" id="title" placeholder="Write title here...">
+                            <p class="error" id="error"></p>
+                        </div>
+                        <div class="ones">
+                            <h2>Category</h2>
+                            <select name="category" id="category" class="input">
+                                <option value="notselected" disabled selected hidden>Select category</option>
+                                <option value="motorvehicle">Motor & Vehicle</option>
+                                <option value="animalpets">Animal & Pets</option>
+                                <option value="sciencetech">Science & Tech</option>
+                                <option value="comic">Comic</option>
+                                <option value="sports">Sports</option>
+                                <option value="moviestv">Movies & TV</option>
+                                <option value="fooddrinks">Food & Drinks</option>
+                                <option value="lifestyle">Lifestyle</option>
+                                <option value="superhero">Superhero</option>
+                                <option value="others">Others</option>
+                            </select>
+                            <p class="error" id="error2"></p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="ones">
+                    <h2>Description</h2>
+                    <textarea name="description" id="description" cols="30" rows="5" placeholder="Write description here..." class="input"></textarea>
+                </div>
+                <div class="ones">
+                    <h2>Source</h2>
+                    <input type="text" class="input" placeholder="(Optional) Insert source here...">
+                </div>
+                <div class="upload">
+                    <button type="submit" class="upload">Upload</button>
+                </div>
+            </form>
+
+            <p class="copyright">By submitting your contents to 1CAK, you acknowledge that you agree to 1CAK's Terms of Service and Community Guidelines.<br>It is advised to fill out sources of your media to avoid copyright violation.</p>
+        </div>
+    </div>
+</body>
+</html>

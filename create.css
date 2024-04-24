@@ -1,0 +1,337 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.navbar {
+    width: 18%;
+}
+
+.bagianKiri {
+    width: 100%;
+}
+
+a{
+    width: 100%;
+    text-decoration: none;
+    color: black;
+}
+
+body{
+    background-color: rgb(255, 255, 255);
+}
+
+button{
+    cursor: pointer;
+}
+
+.main-container {
+    padding-top: 60px;
+    padding-left: 18%;
+}
+
+.main-padding {
+    padding: 25px 70px;
+}
+
+.main-container h1{
+    font-size: 3rem;
+    padding-bottom: 20px;
+}
+
+.abcdefg{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    gap: 50px;
+    text-align: center;
+}
+
+.abcdefg .nextButton{
+    padding: 8px;
+    font-size: 20px;
+    border: none;
+    border-radius: 70px;
+    border-style: solid;
+    background-color: #0066FF;
+    color: white;
+    cursor: pointer;
+    width: 150px;
+    visibility: hidden;
+}
+
+.abcdefg .nextButton:hover{
+    background-color: #0056b3;
+}
+
+.abcdefg .nextButton.active {
+    visibility: visible;
+}
+
+.main-container .createPost{
+    display: flex;
+    width: 100%;
+    /* height: 450px;*/
+    /* justify-content: space-between;
+    justify-content: center; */
+    gap: 10px;
+}
+
+.createPost-left{
+    width: 60%;
+    height: 500px;
+}
+
+#drop-area{
+    width: 60%;
+    height: 500px;
+}
+
+#drop-area img{
+    width: 200px;
+}
+
+#img-view{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    border: 2px dashed;
+    border-color: grey;
+    background-color:rgb(235, 235, 235);
+    background-position: center;
+    background-size: cover;
+}
+
+#img-view p{
+    font-size: 1.25rem;
+}
+
+#img-view span{
+    display: block;
+    font-size: 14px;
+    color: rgb(75, 75, 75);
+    margin-top: 20px;
+}
+
+.createPost-right{
+    padding-left: 40px;
+    /* padding: 30px; */
+    /* border: 3px;
+    border-style: solid; */
+    width: 40%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center;
+    align-items: center; */
+}
+
+.createPost-right .edit-or-adjust{
+    padding-bottom: 30px;
+    /* background-color: rgb(255, 0, 0); */
+    display: flex;
+    justify-content: center;
+    /* gap: 100px; */
+}
+
+.createPost .edit-or-adjust button{
+    width: 50%;
+    font-weight: bold;
+    font-size: 1.25rem;
+    border: none;
+    background-color: transparent;
+    border-bottom: solid;
+    padding: 5px;
+    border-width: 1.5px;
+    padding-bottom: 10px;
+}
+
+.createPost .edits, .createPost .adjustments {
+    color: rgb(166, 166, 166);
+}
+
+.createPost .edits.active, .createPost .adjustments.active {
+    color: black;
+}
+
+.createPost-right .edit-items, .createPost-right .adjust-items {
+    position: absolute;
+    top: 225px;
+    display: flex;
+    flex-direction: column;
+    width: 27.5%;
+    gap: 30px;
+    /* padding: 0 50px; */
+    visibility: hidden;
+}
+
+.createPost-right .edit-items.active, .createPost-right .adjust-items.active {
+    visibility: visible;
+}
+
+.createPost-right .adjust-items .ones {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    font-size: 1.4rem;
+    justify-content: baseline;
+    align-items: baseline;
+    gap: 10px;
+}
+
+.createPost-right .adjust-items .ones input {
+    width: 100%;
+}
+
+.createPost-right .edit-items  h4{
+    font-size: large;
+}
+
+.onHover:hover{
+    cursor: pointer;
+}
+
+/* CROP */
+
+.createPost-right .edit-items .crop{
+    gap: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.createPost-right .edit-items .crop button{
+    width: 50px;
+    height: 30px;
+    background-color: white;
+    border: solid 1px;   
+    border-radius: 5px;
+}
+
+.createPost-right .edit-items .crop .crop-title{
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.createPost-right .edit-items .crop .crop-title img{
+    width: 25px;
+}
+
+.createPost-right .edit-items .crop .crop-details{
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+/* TEXT */
+
+.createPost-right .edit-items .text{
+    gap: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.createPost-right .edit-items .text .text-title{
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.createPost-right .edit-items .text .text-title img{
+    width: 25px;
+}
+
+.createPost-right .edit-items .text .text-details{
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    width: 100%;
+}
+
+.createPost-right .edit-items .text .text-details select{
+    width: 85%;
+    font-size: 14px;
+    padding: 5px;
+}
+
+.createPost-right .edit-items .text .text-details input{
+    width: 15%;
+    padding: 5px;
+}
+
+/* DRAW */
+
+.createPost-right .edit-items .draw{
+    gap: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.createPost-right .edit-items .draw .draw-title{
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.createPost-right .edit-items .draw .draw-title img{
+    width: 25px;
+}
+
+.createPost-right .edit-items .draw .draw-details{
+    gap: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.createPost-right .edit-items .draw .draw-details .slider{
+    width: 100%;
+}
+
+/* STICKER */
+
+.createPost-right .edit-items .sticker{
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.createPost-right .edit-items .sticker .sticker-title{
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.createPost-right .edit-items .sticker .sticker-title img{
+    width: 25px;
+}
+
+.createPost-right .edit-items .sticker .sticker-details{
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}

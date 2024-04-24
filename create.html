@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="create.css">
+    <script src="create.js" defer></script>
+    <!-- nanti pindahin ke css yaaa uwaaaa -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Create</title>
+
+</head>
+<body>
+    <div class="header-container">
+        <div class="samping">
+            <div class="logo">
+                <img src="/Asset/logo 1cak hitam.png" alt="">
+            </div>
+    
+            <div class="notif-profile">
+                <img class="notif" src="/Asset/homepage/notificationIcon.png" alt="">
+                <a href="profile.html">
+                    <img class="profile" src="/Asset/homepage/profile.png" alt="">
+                </a>
+            </div>
+        </div>
+        
+        <div class="tengah">
+            <div class="search-wrapper">
+                <div class="search">
+                    <form>
+                        <div class="searchh">
+                            <input class="search-input" id="x" type="search" placeholder="Search here...">
+                        </div>
+                    </form>
+                </div>
+                <div class="iconSearch">
+                    <img src="/Asset/homepage/searchIcon.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="navbar">
+        <div class="bagianKiri">
+            <div class="navigation">
+                <a href="homepage.html">
+                    <div class="cat">
+                        <img src="/Asset/homepage/homeIcon.png" alt="">
+                        <p>Home</p>
+                    </div>
+                </a>
+
+                <div class="cat">
+                    <img src="/Asset/homepage/topIcon.png" alt="">
+                    <p>Top</p>
+                </div>
+
+                <div class="cat">
+                    <img src="/Asset/homepage/trendingIcon.png" alt="">
+                    <p>Trending</p>
+                </div>
+
+                <div class="cat">
+                    <img src="/Asset/homepage/freshIcon.png" alt="">
+                    <p>Fresh</p>
+                </div>
+
+                <div class="cat">
+                    <img src="/Asset/homepage/collectionIcon.png" alt="">
+                    <p>Collection</p>
+                </div>
+
+                <div class="cat">
+                    <img src="/Asset/homepage/friendIcon.png" alt="">
+                    <p>Friends</p>
+                </div>
+
+                <a href="create.html">
+                    <div class="cat">
+                        <img src="/Asset/homepage/createIcon.png" alt="">
+                        <p>Create</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+<!-- BAGIAN UPLOAD & EDIT FOTO -->
+    <div class="main-container">
+        <div class="main-padding">
+            <h1>Create Post</h1>
+            <div class="abcdefg">
+                <div class="createPost">
+                    <div class="createPost-left">
+                        <label for="input-file" id="drop-area">
+                            <!-- choose image from folder -->
+                            <input type="file" accept="image/*" id="input-file" hidden>
+                            <!-- <button class="choose-img">Choose Image</button> -->
+                            <div id="img-view">
+                                <img src="Asset/create/Upload-icon.png" alt="upload icon">
+                                <p>Drag and drop or click here<br>to upload image</p>
+                                <span>Upload any images from desktop</span>
+                                <!-- <button>Next</button> -->
+                            </div>                    
+                        </label>           
+                    </div>
+                    <div class="createPost-right">
+                        <div class="edit-or-adjust">
+                            <button class="edits" id="edits">Edits</button>
+                            <button class="adjustments" id="adjustments">Adjustments</button>
+                        </div>
+                        <div class="edit-items" id="edit-items">
+                            <div class="crop">
+                                <div class="crop-title onHover">
+                                    <img src="Asset/create/Crop-icon.png" alt="Crop icon">
+                                    <h4>Crop</h4>
+                                </div>
+                                <div class="crop-details">
+                                    <button>1 : 1</button>
+                                    <button>4 : 5</button>
+                                    <button>4 : 3</button>
+                                </div>
+                            </div>
+                            <div class="text">
+                                <div class="text-title onHover">
+                                    <img src="Asset/create/Text-icon.png" alt="Crop icon">
+                                    <h4>Text</h4>
+                                </div>
+                                <div class="text-details">
+                                    <select name="text" id="text">
+                                        <option value="arial">Arial</option>
+                                        <option value="bellMt">Bell MT</option>
+                                        <option value="cooperBlack">Cooper Black</option>
+                                        <option value="jokerman">Jokerman</option>
+                                        <option value="timesNewRoman">Times New Roman</option> 
+                                    </select>
+    
+                                    <input type="text" placeholder="10">
+                                </div>
+                            </div>
+                            <div class="draw">
+                                <div class="draw-title onHover">
+                                    <img src="Asset/create/Draw-icon.png" alt="Crop icon">
+                                    <h4>Draw</h4>
+                                </div>
+                                <div class="draw-details">
+                                    <p>Thickness</p>
+                                    <input type="range" value="100" min="0" max="200" class="slider">
+                                </div>
+                            </div>
+                            <div class="sticker">
+                                <div class="sticker-title onHover">
+                                    <img src="Asset/create/Sticker-icon.png" alt="Crop icon">
+                                    <h4>Sticker</h4>
+                                </div>
+                                <div class="sticker-details">
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="adjust-items" id="adjust-items">
+                            <div class="ones">
+                                <h5>Brightness</h5>
+                                <input type="range" value="100" min="0" max="200" class="slider">
+                            </div>
+                            <div class="ones">
+                                <h5>Contrast</h5>
+                                <input type="range" value="100" min="0" max="200" class="slider">
+                            </div>
+                            <div class="ones">
+                                <h5>Fade</h5>
+                                <input type="range" value="100" min="0" max="200" class="slider">
+                            </div>
+                            <div class="ones">
+                                <h5>Saturation</h5>
+                                <input type="range" value="100" min="0" max="200" class="slider">
+                            </div>
+                            <div class="ones">
+                                <h5>Temperature</h5>
+                                <input type="range" value="100" min="0" max="200" class="slider">
+                            </div>
+                            <div class="ones">
+                                <h5>Vignette</h5>
+                                <input type="range" value="0" min="0" max="200" class="slider">
+                            </div>
+                        </div>
+    
+    
+                    </div>
+                </div>
+                <button class="nextButton" id="nextButton">Next</button>
+                <p class="copyright">By submitting your contents to 1CAK, you acknowledge that you agree to 1CAK's Terms of Service and Community Guidelines.<br>It is advised to fill out sources of your media to avoid copyright violation.</p>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
